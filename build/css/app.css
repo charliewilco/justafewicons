@@ -1,0 +1,7 @@
+html {
+  font: 300 100%/1.4 "freight-sans-pro", sans-serif;
+  background: rgba(243, 243, 243, 0.5); }
+
+.app--header h1 {
+  font: 900 4rem/1 "freight-big-pro", Georgia, serif;
+  color: #F8501C; }

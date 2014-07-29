@@ -1,0 +1,16 @@
+$freightbig: 900 4rem/1 "freight-big-pro", Georgia, serif;
+$freightsans: "freight-sans-pro", sans-serif;
+$bkg: #f3f3f3;
+$orange: #F8501C;
+html {
+    font: 300 100%/1.4 $freightsans;
+    background: rgba($bkg, .5);
+}
+.app {
+    &--header {
+        h1 {
+            font: $freightbig;
+            color: $orange;
+        }
+    }
+}
