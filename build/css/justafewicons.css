@@ -1,22 +1,15 @@
-img {
-  color: #F8501C;
-  display: block;
-  background: #F8501C;
-  margin: 1rem;
-  max-width: 5rem;
-  float: left; }
-
-.hairline {
+.grid img.hairline {
   border: 1px solid; }
 
-.thin {
+.grid img.thin {
   border: 3px solid; }
 
-.thick {
+.grid img.thick {
   border: 5px solid; }
 
-.fat {
+.grid img.fat {
   border: 10px solid; }
 
-.fill {
+.grid img.fill {
+  border: 0;
   opacity: 0.5; }

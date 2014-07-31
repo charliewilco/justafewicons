@@ -3,7 +3,12 @@ $freightsans: "freight-sans-pro", sans-serif;
 $bkg: #f3f3f3;
 $orange: #F8501C;
 $gold: #E5B50F;
+$blue: #5886A7;
+$text: #999;
+
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -11,6 +16,8 @@ $gold: #E5B50F;
 html {
     font: 300 100%/1.4 $freightsans;
     background: rgba($bkg, .5);
+    border-top: .25rem solid $orange;
+    color: $text;
 }
 .app {
     &--header {
@@ -19,6 +26,8 @@ html {
             font: $freightbig;
             color: $orange;
             margin: .25rem 0;
+            text-transform: uppercase;
+            font-size: 3rem;
         }
         h2 {
             font-weight: 400;
@@ -26,6 +35,27 @@ html {
             letter-spacing: 2px;
             color: $gold;
             margin: .25rem 0;
+        }
+    }
+    &--footer {
+        background: rgba($blue, .25);
+
+    }
+    &--btn {
+        padding: 1rem;
+        border: 2px solid $blue;
+        border-radius: .375rem;
+        background: none;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: inline-block;
+        color: $blue;
+        text-decoration: none;
+        transition: all 500ms linear;
+        &:hover {
+            color: white;
+            background: $blue;
         }
     }
 }
@@ -40,18 +70,51 @@ html {
         display: block;
     }
 }
-
+.section--headline {
+    color: $blue;
+    font-size: 1.75rem;
+    margin: 0 0 .625rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    &::before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 10rem;
+        background: $gold;
+        margin: 0 auto .375rem;
+    }
+}
+.section--module {
+    background: rgba($text, .0625);
+    padding: 1rem;
+}
 .grid {
     width: 100%;
-    border: 1px solid #999;
+    border: 1px solid $text;
     padding: 2rem;
-
+    margin-bottom: 2rem;
+    text-align: center;
+    img {
+        color: $orange;
+        display: inline-block;
+        background: $orange;
+        margin: 1rem;
+        max-width: 10rem;
+        border: 0;
+        transition: border 125ms ease;
+    }
 }
 
-
+p {
+    max-width: 35rem;
+    font-size: 1.25rem;
+    margin: 0 auto;
+}
 .controller {
     margin: 2rem 0;
-
+    text-align: center;
     input[type="radio"] {
         display:none;
     }
@@ -59,21 +122,24 @@ html {
         display:inline-block;
         padding: .5rem;
         margin: .5rem .25rem .5rem 0;
-        color: $orange;
+        color: $blue;
         border: 2px solid;
         font-weight: 700;
         font-size: 1.25rem;
-        background-color:rgba($orange, .375);
+        background-color:rgba($blue, .375);
         cursor:pointer;
         width: 100%;
         max-width: 8.25rem;
         text-align: center;
         border-radius: .375rem;
+        &:last-of-type {
+            margin-right: 0;
+        }
     }
 
     input[type="radio"]:checked + label span {
         color: white;
-        background-color:rgba($orange, .75);
-        border-color: $orange;
+        background-color:rgba($blue, .875);
+        border-color: $blue;
     }
 }
