@@ -1,2 +1,22 @@
+img {
+  color: #F8501C;
+  display: block;
+  background: #F8501C;
+  margin: 1rem;
+  max-width: 5rem;
+  float: left; }
+
+.hairline {
+  border: 1px solid; }
+
+.thin {
+  border: 3px solid; }
+
 .thick {
-  stroke: 10px; }
+  border: 5px solid; }
+
+.fat {
+  border: 10px solid; }
+
+.fill {
+  opacity: 0.5; }

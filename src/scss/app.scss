@@ -2,15 +2,78 @@ $freightbig: 900 4rem/1 "freight-big-pro", Georgia, serif;
 $freightsans: "freight-sans-pro", sans-serif;
 $bkg: #f3f3f3;
 $orange: #F8501C;
+$gold: #E5B50F;
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 html {
     font: 300 100%/1.4 $freightsans;
     background: rgba($bkg, .5);
 }
 .app {
     &--header {
+        padding: 2rem 0;
         h1 {
             font: $freightbig;
             color: $orange;
+            margin: .25rem 0;
         }
+        h2 {
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $gold;
+            margin: .25rem 0;
+        }
+    }
+}
+
+.container {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 1rem;
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
+.grid {
+    width: 100%;
+    border: 1px solid #999;
+    padding: 2rem;
+
+}
+
+
+.controller {
+    margin: 2rem 0;
+
+    input[type="radio"] {
+        display:none;
+    }
+    input[type="radio"] + label span {
+        display:inline-block;
+        padding: .5rem;
+        margin: .5rem .25rem .5rem 0;
+        color: $orange;
+        border: 2px solid;
+        font-weight: 700;
+        font-size: 1.25rem;
+        background-color:rgba($orange, .375);
+        cursor:pointer;
+        width: 100%;
+        max-width: 8.25rem;
+        text-align: center;
+        border-radius: .375rem;
+    }
+
+    input[type="radio"]:checked + label span {
+        color: white;
+        background-color:rgba($orange, .75);
+        border-color: $orange;
     }
 }

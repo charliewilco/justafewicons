@@ -1,3 +1,20 @@
-.thick {
-    stroke: 10px;
+$orange: #F8501C;
+$gold: #E5B50F;
+
+// .thick {
+//     stroke: 10px;
+// }
+
+img {
+    color: $orange;
+    display: block;
+    background: $orange;
+    margin: 1rem;
+    max-width: 5rem;
+    float: left;
 }
+.hairline { border: 1px solid; }
+.thin { border: 3px solid; }
+.thick { border: 5px solid; }
+.fat { border: 10px solid; }
+.fill { opacity: .5; }
