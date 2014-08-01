@@ -3,3 +3,27 @@
 .grid img.thick { border: 5px solid; }
 .grid img.fat { border: 10px solid; }
 .grid img.fill { border: 0; opacity: .5; }
+.grid {
+    svg {
+        &.hairline {
+            stroke-width: 1px;
+        }
+        &.thin {
+            stroke-width: 5px;
+        }
+        &.thick {
+            stroke-width: 10px;
+        }
+        &.fat {
+            stroke-width: 15px;
+        }
+        &.fill {
+            fill: #666 !important;
+            * {
+                fill: #666 !important;
+                stroke: white;
+                stroke-width: 5px;
+            }
+        }
+    }
+}

@@ -12,8 +12,20 @@ html {
   border-top: 0.25rem solid #F8501C;
   color: #999; }
 
+.container {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 1rem; }
+  .container::after {
+    content: "";
+    clear: both;
+    display: block; }
+
 .app--header {
   padding: 2rem 0; }
+  @media only screen and (max-width: 500px) {
+    .app--header {
+      padding: 2rem 1rem; } }
   .app--header h1 {
     font: 900 4rem/1 "freight-big-pro", Georgia, serif;
     color: #F8501C;
@@ -26,6 +38,11 @@ html {
     letter-spacing: 2px;
     color: #E5B50F;
     margin: 0.25rem 0; }
+  @media only screen and (max-width: 500px) {
+    .app--header h1 {
+      font-size: 2rem; }
+    .app--header h2 {
+      font-size: 1.5rem; } }
 .app--footer {
   background: rgba(88, 134, 167, 0.25); }
 .app--btn {
@@ -45,15 +62,6 @@ html {
     color: white;
     background: #5886A7; }
 
-.container {
-  max-width: 68rem;
-  margin: 0 auto;
-  padding: 1rem; }
-  .container::after {
-    content: "";
-    clear: both;
-    display: block; }
-
 .section--headline {
   color: #5886A7;
   font-size: 1.75rem;
@@ -68,7 +76,6 @@ html {
     width: 10rem;
     background: #E5B50F;
     margin: 0 auto 0.375rem; }
-
 .section--module {
   background: rgba(153, 153, 153, 0.0625);
   padding: 1rem; }
@@ -79,11 +86,46 @@ html {
   padding: 2rem;
   margin-bottom: 2rem;
   text-align: center; }
+  .grid--item {
+    max-width: 7rem;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1rem; }
+    .grid--item svg {
+      width: 80%;
+      height: auto;
+      max-height: 100%;
+      margin: 0 auto;
+      -webkit-transition: stroke-width 125ms ease;
+              transition: stroke-width 125ms ease; }
+    .grid--item span {
+      margin-top: 1rem;
+      background: #5886A7;
+      width: 100%;
+      display: block;
+      position: relative;
+      color: white;
+      font-weight: 700;
+      letter-spacing: 2px;
+      padding: 0.375rem 0.25rem;
+      text-transform: uppercase;
+      border-radius: 0.25rem; }
+      .grid--item span::before {
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+        position: absolute;
+        top: -0.74rem;
+        left: 0;
+        right: 0;
+        border-left: 0.75rem solid transparent;
+        border-right: 0.75rem solid transparent;
+        border-bottom: 0.75rem solid #5886A7; }
   .grid img {
     color: #F8501C;
-    display: inline-block;
     background: #F8501C;
-    margin: 1rem;
     max-width: 10rem;
     border: 0;
     -webkit-transition: border 125ms ease;
@@ -99,22 +141,31 @@ p {
   text-align: center; }
   .controller input[type="radio"] {
     display: none; }
+  .controller input[type="radio"] + label {
+    margin-right: 1rem; }
+    .controller input[type="radio"] + label:last-of-type {
+      margin-right: 0; }
+    @media only screen and (max-width: 500px) {
+      .controller input[type="radio"] + label {
+        margin-right: 0; } }
   .controller input[type="radio"] + label span {
     display: inline-block;
     padding: 0.5rem;
-    margin: 0.5rem 0.25rem 0.5rem 0;
+    margin: 0.25rem 0;
     color: #5886A7;
     border: 2px solid;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.25rem;
+    text-transform: uppercase;
     background-color: rgba(88, 134, 167, 0.375);
     cursor: pointer;
     width: 100%;
-    max-width: 8.25rem;
+    max-width: 9rem;
     text-align: center;
     border-radius: 0.375rem; }
-    .controller input[type="radio"] + label span:last-of-type {
-      margin-right: 0; }
+    @media only screen and (max-width: 500px) {
+      .controller input[type="radio"] + label span {
+        max-width: 100%; } }
   .controller input[type="radio"]:checked + label span {
     color: white;
     background-color: rgba(88, 134, 167, 0.875);
