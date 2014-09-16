@@ -5,8 +5,7 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     connect      = require('gulp-connect'),
     concat       = require('gulp-concat'),
-    imagemin     = require('gulp-imagemin'),
-    swig         = require('gulp-swig');
+    imagemin     = require('gulp-imagemin');
 
 gulp.task('scripts', function(){
     gulp.src('src/js/*.js')
@@ -32,13 +31,6 @@ gulp.task('html', function () {
     .pipe(connect.reload());
 });
 
-gulp.task('templates', function() {
-  gulp.src('src/lib/*.html')
-    .pipe(swig())
-    .pipe(gulp)
-    .pipe(gulp.dest('build/'))
-    .pipe(connect.reload());
-});
 
 
 gulp.task('watch', function(){
@@ -60,4 +52,4 @@ gulp.task('images', function () {
         .pipe(gulp.dest('build/img/'));
 });
 
-gulp.task('default', ['html', 'templates', 'scripts', 'styles', 'images', 'watch', 'connect']);
+gulp.task('default', ['html', 'scripts', 'styles', 'images', 'watch', 'connect']);
