@@ -8,29 +8,30 @@
 
 html {
 	font: 300 100%/1.4 $sans-serif;
-	background: rgba($bkg, .5);
+	background: rgba($bkg, .875);
 	border-top: .25rem solid $blue;
 	color: $text;
 }
 
 p {
 	max-width: 35rem;
-	font-size: 1.25rem;
-	margin: 0 auto;
+	font-size: 1.125rem;
+	margin: 1rem auto;
+	padding: .5rem;
 }
-
+a {
+	color: $blue;
+	text-decoration: none;
+	transition: all 375ms linear;
+	&:hover {
+		color: rgba($blue, .5);
+	}
+}
+main {
+	padding: .25rem
+}
 .hidden {
 	display: none;
 	width: 0;
 	height: 0;
-}
-.container {
-	max-width: 68rem;
-	margin: 0 auto;
-	padding: 1rem;
-	&::after {
-		content: "";
-		clear: both;
-		display: block;
-	}
 }

@@ -1,9 +1,9 @@
 .grid {
 	width: 100%;
-	margin: 1rem auto;
+	max-width: 68rem;
 	border: 1px solid $text;
 	padding: 1rem 2rem;
-	margin-bottom: 2rem;
+	margin: 0 auto 2rem;
 	text-align: center;
 	display:flex;
 	flex-direction: row;
@@ -11,6 +11,9 @@
 	justify-content: flex-start;
 	align-content: flex-start;
 	align-items: flex-start;
+	@include respond-to(handheads) {
+		padding: 1rem 1rem;
+	}
 	&--item {
 		flex: 0 1 7rem;
 		height: auto;

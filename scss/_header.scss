@@ -9,6 +9,7 @@
 		flex: 1 0 20rem;
 		padding: 0 1rem;
 		@include respond-to(handhelds) {
+			flex: 1 0 100%;
 			padding: 0;
 		}
 	}

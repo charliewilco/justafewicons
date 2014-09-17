@@ -8,35 +8,38 @@
 
 html {
   font: 300 100%/1.4 'Gotham SSm A', 'Gotham SSm B', Avenir, Avenir Next, Helvetica Neue, Helvetica, sans-serif;
-  background: rgba(243, 243, 243, 0.5);
+  background: rgba(243, 243, 243, 0.875);
   border-top: 0.25rem solid #5886A7;
   color: #999; }
 
 p {
   max-width: 35rem;
-  font-size: 1.25rem;
-  margin: 0 auto; }
+  font-size: 1.125rem;
+  margin: 1rem auto;
+  padding: 0.5rem; }
+
+a {
+  color: #5886A7;
+  text-decoration: none;
+  -webkit-transition: all 375ms linear;
+          transition: all 375ms linear; }
+  a:hover {
+    color: rgba(88, 134, 167, 0.5); }
+
+main {
+  padding: 0.25rem; }
 
 .hidden {
   display: none;
   width: 0;
   height: 0; }
 
-.container {
-  max-width: 68rem;
-  margin: 0 auto;
-  padding: 1rem; }
-  .container::after {
-    content: "";
-    clear: both;
-    display: block; }
-
 .grid {
   width: 100%;
-  margin: 1rem auto;
+  max-width: 68rem;
   border: 1px solid #999;
   padding: 1rem 2rem;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
   text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
@@ -146,6 +149,10 @@ p {
     padding: 0 1rem; }
     @media only screen and (max-width: 500px) {
       .app--header .logo {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 100%;
+            -ms-flex: 1 0 100%;
+                flex: 1 0 100%;
         padding: 0; } }
   .app--header .downloads {
     -webkit-box-flex: 1;
@@ -162,6 +169,9 @@ p {
                 flex: 1 0 100%;
         padding: 1rem 0;
         text-align: center; } }
+
+.app--footer {
+  padding: 1rem; }
 
 .app--header {
   padding: 1.5rem 1rem; }
