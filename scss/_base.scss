@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	font: 300 100%/1.4 $sans-serif;
+	background: rgba($bkg, .5);
+	border-top: .25rem solid $blue;
+	color: $text;
+}
+
+p {
+	max-width: 35rem;
+	font-size: 1.25rem;
+	margin: 0 auto;
+}
+
+.hidden {
+	display: none;
+	width: 0;
+	height: 0;
+}
+.container {
+	max-width: 68rem;
+	margin: 0 auto;
+	padding: 1rem;
+	&::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+}

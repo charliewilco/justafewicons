@@ -1,0 +1,30 @@
+.grid img.hairline {
+  border: 1px solid; }
+
+.grid img.thin {
+  border: 3px solid; }
+
+.grid img.thick {
+  border: 5px solid; }
+
+.grid img.fat {
+  border: 10px solid; }
+
+.grid img.fill {
+  border: 0;
+  opacity: 0.5; }
+
+.grid svg.hairline {
+  stroke-width: 1px; }
+.grid svg.thin {
+  stroke-width: 5px; }
+.grid svg.thick {
+  stroke-width: 10px; }
+.grid svg.fat {
+  stroke-width: 15px; }
+.grid svg.fill {
+  fill: #666 !important; }
+  .grid svg.fill * {
+    fill: #666 !important;
+    stroke: white;
+    stroke-width: 5px; }
