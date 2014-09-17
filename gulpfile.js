@@ -11,8 +11,8 @@ gulp.task('watch', function(){
 
 gulp.task('svg', function () {
   return gulp.src('icons/*.svg')
-             .pipe(svgstore({ fileName: 'defs-block.svg', prefix: 'icon-'}))
              .pipe(svgmin())
+             .pipe(svgstore({ fileName: 'defs-block.svg', prefix: 'icon-'}))
              .pipe(gulp.dest('./'));
 });
 
