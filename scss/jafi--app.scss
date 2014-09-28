@@ -72,3 +72,13 @@
         padding: 1rem;
     }
 }
+
+.new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $yellow;
+}

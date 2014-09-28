@@ -70,7 +70,8 @@ main {
         -ms-flex: 0 1 7rem;
             flex: 0 1 7rem;
     height: auto;
-    margin: 0 1rem 1rem; }
+    margin: 0 1rem 1rem;
+    position: relative; }
     @media only screen and (max-width: 500px) {
       .grid--item {
         margin: 0.25rem; } }
@@ -84,7 +85,7 @@ main {
       fill: #5886A7; }
       .grid--item svg:hover, .grid--item svg:focus {
         width: 100%; }
-    .grid--item span {
+    .grid--item_label {
       margin-top: 1rem;
       background: #5886A7;
       width: 100%;
@@ -96,7 +97,7 @@ main {
       line-height: 1;
       padding: 0.5rem 0.25rem;
       border-radius: 0.25rem; }
-      .grid--item span::before {
+      .grid--item_label::before {
         content: "";
         width: 0;
         height: 0;
@@ -226,3 +227,12 @@ main {
 .section--module {
   background: rgba(153, 153, 153, 0.0625);
   padding: 1rem; }
+
+.new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffba00; }
