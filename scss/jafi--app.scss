@@ -6,7 +6,7 @@
 
 .app {
     &--header {
-        padding: 1.5rem 1rem;
+        padding: 2rem 1rem;
         h1 {
             font-weight: 300;
             color: $blue;
@@ -20,16 +20,13 @@
             margin: .25rem 0;
         }
         @include respond-to(handhelds) {
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
+            h1 { font-size: 1.75rem; }
+            h2 { font-size: 1rem; }
         }
     }
     &--footer {
-        background: rgba($blue, .25);
+        background: rgba($blue, .125);
+        text-align: center;
     }
     &--btn {
         padding: 1rem;
@@ -38,6 +35,7 @@
         background: none;
         font-weight: 700;
         letter-spacing: 2px;
+        margin: .25rem;
         text-transform: uppercase;
         display: inline-block;
         color: $blue;
@@ -58,6 +56,7 @@
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 3px;
+        @include respond-to(handhelds) { font-size: 1.25rem; }
         &::after {
             content: "";
             display: block;
@@ -66,10 +65,6 @@
             background: darken($blue, 12.5%);
             margin: 1rem auto;
         }
-    }
-    &--module {
-        background: rgba($text, .0625);
-        padding: 1rem;
     }
 }
 

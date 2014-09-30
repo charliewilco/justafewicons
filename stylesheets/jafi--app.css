@@ -13,10 +13,10 @@ html {
   color: #999; }
 
 p {
-  max-width: 35rem;
-  font-size: 1.125rem;
-  margin: 1rem auto;
-  padding: 0.5rem; }
+  font-size: 1.25rem;
+  margin-bottom: 1rem; }
+  p:last-of-type {
+    margin-bottom: 0; }
 
 a {
   color: #5886A7;
@@ -29,17 +29,28 @@ a {
 main {
   padding: 0.25rem; }
 
+.container {
+  max-width: 68rem;
+  margin: 0 auto 2rem;
+  width: 100%; }
+
+.entry {
+  padding: 0.5rem;
+  -webkit-columns: 2 20rem;
+     -moz-columns: 2 20rem;
+          columns: 2 20rem;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem; }
+
 .hidden {
   display: none;
   width: 0;
   height: 0; }
 
 .grid {
-  width: 100%;
-  max-width: 68rem;
   border: 1px solid #999;
   padding: 1rem 2rem;
-  margin: 0 auto 2rem;
   text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
@@ -131,51 +142,42 @@ main {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-align-content: flex-start;
-      -ms-flex-line-pack: start;
-          align-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
   .app--header .logo {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 0 20rem;
-        -ms-flex: 1 0 20rem;
-            flex: 1 0 20rem;
-    padding: 0 1rem; }
-    @media only screen and (max-width: 500px) {
-      .app--header .logo {
-        -webkit-box-flex: 1;
-        -webkit-flex: 1 0 100%;
-            -ms-flex: 1 0 100%;
-                flex: 1 0 100%;
-        padding: 0; } }
-  .app--header .downloads {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 20rem;
-        -ms-flex: 1 0 20rem;
-            flex: 1 0 20rem;
-    padding: 0 3rem;
-    text-align: right; }
-    @media only screen and (max-width: 500px) {
-      .app--header .downloads {
-        -webkit-box-flex: 1;
-        -webkit-flex: 1 0 100%;
-            -ms-flex: 1 0 100%;
-                flex: 1 0 100%;
-        padding: 1rem 0;
-        text-align: center; } }
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 1rem;
+    text-align: center; }
+
+.downloads {
+  padding: 0 3rem;
+  text-align: center; }
+  @media only screen and (max-width: 500px) {
+    .downloads {
+      padding: 1rem 0; } }
 
 .app--footer {
-  padding: 1rem; }
+  padding: 1rem 1rem 2rem; }
+  .app--footer svg {
+    fill: #5886A7;
+    width: 2rem;
+    height: 1.83rem;
+    margin: 1rem; }
 
 .app--header {
-  padding: 1.5rem 1rem; }
+  padding: 2rem 1rem; }
   .app--header h1 {
     font-weight: 300;
     color: #5886A7;
@@ -188,11 +190,12 @@ main {
     margin: 0.25rem 0; }
   @media only screen and (max-width: 500px) {
     .app--header h1 {
-      font-size: 2rem; }
+      font-size: 1.75rem; }
     .app--header h2 {
-      font-size: 1.5rem; } }
+      font-size: 1rem; } }
 .app--footer {
-  background: rgba(88, 134, 167, 0.25); }
+  background: rgba(88, 134, 167, 0.125);
+  text-align: center; }
 .app--btn {
   padding: 1rem;
   border: 2px solid #5886A7;
@@ -200,6 +203,7 @@ main {
   background: none;
   font-weight: 700;
   letter-spacing: 2px;
+  margin: 0.25rem;
   text-transform: uppercase;
   display: inline-block;
   color: #5886A7;
@@ -217,6 +221,9 @@ main {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px; }
+  @media only screen and (max-width: 500px) {
+    .section--headline {
+      font-size: 1.25rem; } }
   .section--headline::after {
     content: "";
     display: block;
@@ -224,9 +231,6 @@ main {
     width: 6rem;
     background: #42657d;
     margin: 1rem auto; }
-.section--module {
-  background: rgba(153, 153, 153, 0.0625);
-  padding: 1rem; }
 
 .new {
   position: absolute;

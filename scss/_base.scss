@@ -14,10 +14,14 @@ html {
 }
 
 p {
-	max-width: 35rem;
-	font-size: 1.125rem;
-	margin: 1rem auto;
-	padding: .5rem;
+	// max-width: 35rem;
+	font-size: 1.25rem;
+	// margin: 1rem auto;
+	// padding: .5rem;
+	margin-bottom: 1rem;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 }
 a {
 	color: $blue;
@@ -29,6 +33,17 @@ a {
 }
 main {
 	padding: .25rem
+}
+.container {
+	max-width: 68rem;
+	margin: 0 auto 2rem;
+	width: 100%;
+}
+
+.entry {
+	padding: .5rem;
+	columns: 2 20rem;
+	column-gap: 2rem;
 }
 .hidden {
 	display: none;
