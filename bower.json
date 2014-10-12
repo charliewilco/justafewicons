@@ -1,0 +1,24 @@
+{
+  "name": "justafewicons",
+  "version": "1.0.1",
+  "homepage": "https://github.com/charlespeters/justafewicons",
+  "authors": [
+    "charlespeters <charlespeters42@gmail.com>"
+  ],
+  "description": "custom SVG icon set",
+  "main": "defs-block.svg",
+  "keywords": [
+    "svg",
+    "icons",
+    "symbols",
+    "custom"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
