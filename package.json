@@ -11,10 +11,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.8.8",
-    "gulp-plumber": "^0.6.5",
-    "gulp-rename": "^1.2.0",
-    "gulp-svgmin": "^0.4.6",
-    "gulp-svgstore": "^1.0.1"
+    "gulp": "^3.8.11",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgmin": "^1.1.2",
+    "gulp-svgstore": "^5.0.2"
   }
 }

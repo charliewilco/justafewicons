@@ -1,6 +1,6 @@
 node_modules
 .sass-cache
-
-build/vendor
-
+/vendor
+defs-block.svg
+./*.svg
 *.log
