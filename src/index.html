@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  @@include('inc/head.html')
+  <body>
+    @@include('inc/icons.svg')
+    @@include('inc/header.html')
+    <main id="main_content_wrap" class="outer">
+      <article class="container">
+        <h3 class="section--headline">Get the Icons</h3>
+        <div class="downloads">
+            <a class="app--btn forkme_banner" href="https://github.com/charlespeters/justafewicons">View on GitHub</a>
+            <a class="app--btn zip_download_link" href="https://github.com/charlespeters/justafewicons/zipball/master">Download .zip</a>
+        </div>
+      </article>
+      <article id="main_content" class="container">
+        <h3 class="section--headline">Using the Icons</h3>
+        <section class="entry">
+          <p>Fork the repo on Github. Use the <code><symbol></code> method for SVG, defined <a href="http://css-tricks.com/svg-symbol-good-choice-icons/">here</a>. Use the defs-block.svg at top of your document and folow the #icon-JAFI_iconname naming convention.</p>
+            <p>So for example, if we wanted the reference that podcast icon in our mark up we'd use this: <code><use xlink:href="#icon-JAFI_podcast" /></code> and we'd be ready to go. I probably shouldn't be talking the 2nd person.</p>
+        </section>
+      </article>
+      @@include('inc/icon-container.html')
+    </main>
+    @@include('inc/footer.html')
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '55662233de2e265b3e00605e');
+        t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+        t.src = 'https://track.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+  </body>
+</html>
