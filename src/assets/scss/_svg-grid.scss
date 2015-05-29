@@ -1,68 +1,53 @@
 .grid {
-	border: 1px solid $text;
-	padding: 1rem 2rem;
-	text-align: center;
-	display:flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-content: flex-start;
-	align-items: flex-start;
-	@include respond-to(handheads) {
-		padding: 1rem 1rem;
-	}
-	&--item {
-		flex: 0 1 7rem;
-		height: auto;
-		margin: 0 1rem 1rem;
-		position: relative;
-		@include respond-to(handhelds) {
-			margin: .25rem;
-		}
-		svg {
-			width: 80%;
-			height: auto;
-			max-height:100%;
-			margin: 0 auto;
-			transition: all 375ms ease;
-			fill: $blue;
-			&:hover, &:focus {
-				width: 100%;
-			}
-		}
-		&_label {
-			margin-top: 1rem;
-			background: $blue;
-			width: 100%;
-			display: block;
-			position: relative;
-			color: white;
-			font-weight: 400;
-			font-size: .875rem;
-			line-height: 1;
-			padding: .5rem .25rem;
-			border-radius: .25rem;
-			&::before {
-				content: "";
-				width: 0;
-				height: 0;
-				margin: 0 auto;
-				position: absolute;
-				display: block;
-				top: -0.73rem;
-				left: 0;
-				right: 0;
-				border-left: 1rem solid transparent;
-				border-right: 1rem solid transparent;
-				border-bottom: 1rem solid $blue;
-			}
-		}
-	}
-	img {
-		color: $orange;
-		background: $orange;
-		max-width: 10rem;
-		border: 0;
-		transition: border 125ms ease;
-	}
+  padding: 1rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  @include respond-to(handhelds) { padding: 1rem .5rem; }
+  &--item {
+    flex: 1 1 5.75rem;
+    max-width: 5.75rem;
+    height: auto;
+    margin: 0 1rem 1rem 0;
+    position: relative;
+    @include respond-to(handhelds) { margin: .25rem; }
+    svg {
+      width: 80%;
+      height: auto;
+      max-height:100%;
+      margin: 0 auto;
+      transition: all 375ms ease;
+      fill: $blue;
+      &:hover, &:focus { width: 100%; }
+    }
+    &_label {
+      margin-top: .5rem;
+      background: $blue;
+      width: 100%;
+      display: block;
+      position: relative;
+      color: white;
+      font-weight: 400;
+      font-size: .625rem;
+      line-height: 1;
+      padding: .5rem .25rem;
+      border-radius: .25rem;
+      &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+        position: absolute;
+        display: block;
+        top: -0.73rem; left: 0; right: 0;
+        border-left: 1rem solid transparent;
+        border-right: 1rem solid transparent;
+        border-bottom: 1rem solid $blue;
+      }
+    }
+  }
 }

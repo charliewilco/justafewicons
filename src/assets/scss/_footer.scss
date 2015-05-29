@@ -1,9 +1,10 @@
 .app--footer {
-	padding: 1rem 1rem 2rem;
-	svg {
-		fill: $blue;
-		width: 2rem;
-		height: 1.83rem;
-		margin: 1rem;
-	}
+  padding: 1rem 1rem 2rem;
+  background: rgba($blue, .125);
+  svg {
+    fill: $blue;
+    width: 2rem;
+    height: 1.83rem;
+    margin: 1rem;
+  }
 }

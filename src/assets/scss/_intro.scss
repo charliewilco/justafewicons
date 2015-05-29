@@ -1,0 +1,10 @@
+.intro {
+  background: rgba($blue, .625);
+  padding: 2rem 1.5rem;
+  a {
+    color: $dblue;
+    &:hover {
+      color: $gold;
+    }
+  }
+}

@@ -5,20 +5,15 @@
     @@include('inc/icons.svg')
     @@include('inc/header.html')
     <main id="main_content_wrap" class="outer">
-      <article class="container">
-        <h3 class="section--headline">Get the Icons</h3>
-        <div class="downloads">
-            <a class="app--btn forkme_banner" href="https://github.com/charlespeters/justafewicons">View on GitHub</a>
-            <a class="app--btn zip_download_link" href="https://github.com/charlespeters/justafewicons/zipball/master">Download .zip</a>
-        </div>
-      </article>
-      <article id="main_content" class="container">
-        <h3 class="section--headline">Using the Icons</h3>
-        <section class="entry">
-          <p>Fork the repo on Github. Use the <code><symbol></code> method for SVG, defined <a href="http://css-tricks.com/svg-symbol-good-choice-icons/">here</a>. Use the defs-block.svg at top of your document and folow the #icon-JAFI_iconname naming convention.</p>
-            <p>So for example, if we wanted the reference that podcast icon in our mark up we'd use this: <code><use xlink:href="#icon-JAFI_podcast" /></code> and we'd be ready to go. I probably shouldn't be talking the 2nd person.</p>
-        </section>
-      </article>
+      <div class="intro c--white">
+        <article id="main_content" class="container--full container--center container--pad">
+          <h3 class="caps lt-2 w-400 c--white hl--sm m--offset_b">Using the Icons</h3>
+          <section class="entry">
+            <p>Fork the repo on Github or install via Bower. Use all the icons in sprite or as inline images. I would recommend you use these with the <code>&lt;symbol&gt;</code> method for SVG, defined <a href="http://css-tricks.com/svg-symbol-good-choice-icons/">here</a>. If you're using Gulp to build your icon sprite here's a <a href="http://arwhd.co/2015/05/18/svg-gulp-workflow/">reference</a>.</p>
+            <p>So for example, if you wanted the reference that podcast icon in your markup you'd use this: <code>&lt;use xlink:href=&quot;#jf--icon_podcast&quot; /&gt;</code> and you'd be ready to go.</p>
+          </section>
+        </article>
+      </div>
       @@include('inc/icon-container.html')
     </main>
     @@include('inc/footer.html')

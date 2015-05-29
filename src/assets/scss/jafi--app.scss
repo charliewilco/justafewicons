@@ -1,72 +1,12 @@
 @import 'variables';
 @import 'base';
+@import 'type';
 @import 'svg-grid';
+@import 'btns';
+@import 'flexo';
+@import 'intro';
 @import 'header';
 @import 'footer';
-
-.app {
-    &--header {
-        padding: 2rem 1rem;
-        h1 {
-            font-weight: 300;
-            color: $blue;
-            margin: .25rem 0;
-            font-size: 3rem;
-        }
-        h2 {
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin: .25rem 0;
-        }
-        @include respond-to(handhelds) {
-            h1 { font-size: 1.75rem; }
-            h2 { font-size: 1rem; }
-        }
-    }
-    &--footer {
-        background: rgba($blue, .125);
-        text-align: center;
-    }
-    &--btn {
-        padding: 1rem;
-        border: 2px solid $blue;
-        border-radius: .375rem;
-        background: none;
-        font-weight: 700;
-        letter-spacing: 2px;
-        margin: .25rem;
-        text-transform: uppercase;
-        display: inline-block;
-        color: $blue;
-        text-decoration: none;
-        transition: all 500ms linear;
-        &:hover {
-            color: white;
-            background: $blue;
-        }
-    }
-}
-
-.section {
-    &--headline {
-        color: $blue;
-        font-size: 1.75rem;
-        margin: 0 0 .625rem;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        @include respond-to(handhelds) { font-size: 1.25rem; }
-        &::after {
-            content: "";
-            display: block;
-            height: 3px;
-            width: 6rem;
-            background: darken($blue, 12.5%);
-            margin: 1rem auto;
-        }
-    }
-}
 
 .new {
   position: absolute;
