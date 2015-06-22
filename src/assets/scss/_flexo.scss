@@ -21,7 +21,7 @@
 
 .m {
   &--offset {
-    &_t { margin-top: .75rem; }
-    &_b { margin-bottom: .75rem; }
+    &_t { margin-top: .75rem !important; }
+    &_b { margin-bottom: .75rem !important; }
   }
 }

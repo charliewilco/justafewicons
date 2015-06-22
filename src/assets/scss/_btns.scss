@@ -8,8 +8,14 @@
   display: inline-block;
   text-decoration: none;
   transition: all 500ms linear;
-  color: white;
+  &_lite {
+    color: white;
+    &:hover { color: gold; }
+  }
+  &_dark {
+    color: darken($blue, 5%);
+    &:hover { color: white; }
+  }
   @include respond-to(handhelds) { width: 100%; }
-  &:hover { color: $gold; }
   &:last-of-type { margin: 0 0 1rem 0; }
 }

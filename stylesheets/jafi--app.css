@@ -230,13 +230,18 @@ pre {
   display: inline-block;
   text-decoration: none;
   -webkit-transition: all 500ms linear;
-          transition: all 500ms linear;
-  color: white; }
+          transition: all 500ms linear; }
+  .app--btn_lite {
+    color: white; }
+    .app--btn_lite:hover {
+      color: gold; }
+  .app--btn_dark {
+    color: #4f7996; }
+    .app--btn_dark:hover {
+      color: white; }
   @media only screen and (max-width: 500px) {
     .app--btn {
       width: 100%; } }
-  .app--btn:hover {
-    color: #E3BD6E; }
   .app--btn:last-of-type {
     margin: 0 0 1rem 0; }
 
@@ -284,10 +289,10 @@ pre {
   margin-bottom: 2rem; }
 
 .m--offset_t {
-  margin-top: .75rem; }
+  margin-top: .75rem !important; }
 
 .m--offset_b {
-  margin-bottom: .75rem; }
+  margin-bottom: .75rem !important; }
 
 .intro {
   background: rgba(88, 134, 167, 0.625);
@@ -296,6 +301,10 @@ pre {
     color: #4f7996; }
     .intro a:hover {
       color: #E3BD6E; }
+
+.sketch {
+  padding: 2rem 0.5rem;
+  background: rgba(88, 134, 167, 0.375); }
 
 .app--header {
   -webkit-box-pack: center;
