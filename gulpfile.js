@@ -25,6 +25,7 @@ gulp.task('styles', function(){
     .pipe(sass({style: 'compressed'}))
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest('stylesheets/'))
+    .pipe(gulp.dest('./src/inc/'))
     .pipe(browserSync.stream());
 });
 
