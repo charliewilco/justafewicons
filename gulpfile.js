@@ -1,5 +1,6 @@
 var gulp         = require('gulp');
-var sass         = require('gulp-sass');
+var cssnext      = require('gulp-cssnext');
+var cssmin       = require('gulp-cssmin');
 var includes     = require('gulp-file-include');
 var size         = require('gulp-size');
 var svgmin       = require('gulp-svgmin');
@@ -11,7 +12,8 @@ var browserSync  = require('browser-sync').create();
 
 
 var paths = {
-  sass: './src/assets/scss/*.scss',
+  cssI: './src/assets/css/jafi--app.css',
+  css: './src/assets/css/*.css',
   js: './src/assets/js/*.js',
   vendor: './vendor/',
   templates: ['./src/assets/inc/*', '.src/assets/index.html'],
@@ -20,10 +22,11 @@ var paths = {
 };
 
 gulp.task('styles', function(){
-  return gulp.src(paths.sass)
+  return gulp.src(paths.cssI)
     .pipe(size())
-    .pipe(sass({style: 'compressed'}))
-    .pipe(autoprefixer('last 2 version'))
+    .pipe(cssnext())
+    .pipe(autoprefixer('last 2 version'))i
+    .pipe(cssmin())
     .pipe(gulp.dest('stylesheets/'))
     .pipe(gulp.dest('./src/inc/'))
     .pipe(browserSync.stream());
