@@ -1,0 +1,19 @@
+@import '_variables.css';
+@import '_base.css';
+@import '_type.css';
+@import '_svg-grid.css';
+@import '_btns.css';
+@import '_flexo.css';
+@import '_intro.css';
+@import '_header.css';
+@import '_footer.css';
+
+.new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--yellow);
+}

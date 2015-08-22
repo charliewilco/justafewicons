@@ -4,17 +4,17 @@
   align-items: center;
   background: #5886A7;
   color: white;
-  &_hl { }
-  &_sub { }
-
 }
 
 .logo {
   flex: 1 0 20rem;
-  // padding: 0 1rem;
+  /* padding: 0 1rem; */
 }
 
 .downloads {
-  // padding: 0 3rem;
-  @include respond-to(handhelds) { padding: 1rem 0; }
+  /* padding: 0 3rem; */
+}
+
+@media (--handhelds) {
+  .downloads { padding: 1rem 0; }
 }

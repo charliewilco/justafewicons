@@ -1,0 +1,22 @@
+.app--btn {
+  padding: .75rem 1rem;
+  border: .1025rem solid;
+  border-radius: .375rem;
+  background: none;
+  margin: 0 1rem 1rem 0;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 500ms linear;
+}
+
+.app--btn_lite { color: white; }
+.app--btn_lite:hover { color: var(--gold); }
+.app--btn_dark { color: color(var(--blue) blackness(5%)); }
+.app--btn_dark:hover { color: white; }
+
+.app--btn:last-of-type { margin: 0 0 1rem 0; }
+
+@media (--handhelds) {
+  .app--btn { width: 100%; }
+}

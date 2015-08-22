@@ -7,28 +7,25 @@
 }
 
 html {
-  font: 300 100%/1.6 $sans-serif;
-  background: rgba($bkg, .875);
-  border-top: .25rem solid darken($blue, 5%);;
-  color: $text;
+  font: 300 100%/1.6 var(--sans-serif);
+  background: color(var(--bkg) a(87.5%));
+  border-top: .25rem solid var(--dblue);;
+  color: var(--text);
 }
 
-p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  &:last-of-type { margin-bottom: 0; }
-}
+p { font-size: 1rem; }
+
+p:not(:last-of-type) { margin-bottom: 1rem; }
 
 a {
-  color: $blue;
+  color: var(--blue);
   text-decoration: none;
   transition: all 375ms linear;
-  &:hover { color: rgba($blue, .5); }
 }
 
-.hide {
-  display: none;
-}
+a:hover { color: color(var(--blue) a(50%)); }
+
+.hide { display: none; }
 
 pre {
   background: #C1D9EA;
@@ -36,8 +33,9 @@ pre {
   margin-bottom: 1rem;
   color: #5886A7;
   overflow-x: scroll;
-  code { font-size: 1rem;}
 }
+
+pre code { font-size: 1rem; }
 
 .entry {
   columns: 2 20rem;
