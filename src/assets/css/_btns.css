@@ -12,7 +12,7 @@
 
 .app--btn_lite { color: white; }
 .app--btn_lite:hover { color: var(--gold); }
-.app--btn_dark { color: color(var(--blue) blackness(5%)); }
+.app--btn_dark { color: var(--dblue); }
 .app--btn_dark:hover { color: white; }
 
 .app--btn:last-of-type { margin: 0 0 1rem 0; }

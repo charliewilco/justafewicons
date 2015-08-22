@@ -10,6 +10,7 @@
   --red: #EB8A77;
   --gold: #E3BD6E;
   --dblue: color(var(--blue) blackness(5%));
+  --dblue: #4D7897;
 }
 
 @custom-media --handhelds (width <= 31.25rem);

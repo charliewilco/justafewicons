@@ -14,14 +14,11 @@
 .right { text-align: right; }
 .center { text-align: center; }
 
-
-.c {
-  &--red { color: var(--red); }
-  &--gold { color: var(--gold); }
-  &--blue { color: var(--blue); }
-  &--white { color: white; }
-  &--dblue { color: var(--dblue); }
-}
+.c--red { color: var(--red); }
+.c--gold { color: var(--gold); }
+.c--blue { color: var(--blue); }
+.c--white { color: white; }
+.c--dblue { color: var(--dblue); }
 
 .hl--jumbo { font-size: 2.5rem; }
 .hl--lg    { font-size: 2rem; }

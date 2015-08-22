@@ -25,10 +25,9 @@ gulp.task('styles', function(){
   return gulp.src(paths.cssI)
     .pipe(size())
     .pipe(cssnext())
-    .pipe(autoprefixer('last 2 version'))i
+    .pipe(autoprefixer('last 2 version'))
     .pipe(cssmin())
     .pipe(gulp.dest('stylesheets/'))
-    .pipe(gulp.dest('./src/inc/'))
     .pipe(browserSync.stream());
 });
 
@@ -65,7 +64,7 @@ gulp.task('connect', function(){
 });
 
 gulp.task('watch', function(){
-  gulp.watch(paths.sass, ['styles']);
+  gulp.watch(paths.css, ['styles']);
   gulp.watch(['src/index.html', './src/assets/inc/*.html'], ['templates']);
   gulp.watch(paths.icons, ['icons', 'templates']);
 });

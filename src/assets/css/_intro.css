@@ -1,5 +1,6 @@
 .intro {
   background: color(var(--blue) a(62.5));
+  background: #92AFC5;
   padding: 2rem 1.5rem;
 }
 .intro a { color: var(--dblue); }
@@ -7,6 +8,5 @@
 
 
 .sketch {
-  padding: 2rem .5rem;
   background: color(var(--blue) a(37.5%));
 }

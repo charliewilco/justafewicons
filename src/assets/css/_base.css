@@ -9,7 +9,7 @@
 html {
   font: 300 100%/1.6 var(--sans-serif);
   background: color(var(--bkg) a(87.5%));
-  border-top: .25rem solid var(--dblue);;
+  border-top: .25rem solid var(--dblue);
   color: var(--text);
 }
 
@@ -32,11 +32,13 @@ pre {
   padding: 1rem;
   margin-bottom: 1rem;
   color: #5886A7;
-  overflow-x: scroll;
+  overflow-x: none;
 }
 
 pre code { font-size: 1rem; }
-
+@media (--handhelds) {
+  pre code { font-size: .75rem; }
+}
 .entry {
   columns: 2 20rem;
   column-gap: 2rem;
