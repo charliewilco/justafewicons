@@ -18,7 +18,12 @@
   position: relative;
 }
 
-@media (--handhelds) { .grid--item { margin: .25rem; } }
+@media (--handhelds) {
+  .grid--item {
+    margin: .25rem;
+    flex: 1 1 5rem;
+  }
+}
 
 .grid--item svg {
   width: 80%;
