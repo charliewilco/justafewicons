@@ -10,18 +10,17 @@ var cheerio      = require('gulp-cheerio');
 var plumber      = require('gulp-plumber');
 var browserSync  = require('browser-sync').create();
 
-
 var paths = {
-  cssI: './src/assets/css/jafi--app.css',
+  cssI: './src/assets/css/jafi.css',
   css: './src/assets/css/*.css',
   js: './src/assets/js/*.js',
   vendor: './vendor/',
   templates: ['./src/assets/inc/*', '.src/assets/index.html'],
   icons: './bower_components/justafewicons/icons/*',
-  build: './build/'
+  build: './build/',
 };
 
-gulp.task('styles', function(){
+gulp.task('styles', function () {
   return gulp.src(paths.cssI)
     .pipe(size())
     .pipe(cssnext())
@@ -31,45 +30,44 @@ gulp.task('styles', function(){
     .pipe(browserSync.stream());
 });
 
-
 gulp.task('icons', function () {
   return gulp.src(paths.icons)
     .pipe(svgmin())
-    .pipe(svgstore({ fileName: 'icons.svg', inlineSvg: true}))
+    .pipe(svgstore({ fileName: 'icons.svg', inlineSvg: true }))
     .pipe(cheerio({
       run: function ($, file) {
-          $('svg').addClass('hide');
-          $('[fill]').removeAttr('fill');
+        $('svg').addClass('hide');
+        $('[fill]').removeAttr('fill');
       },
-      parserOptions: { xmlMode: true }
+
+      parserOptions: { xmlMode: true },
+
     }))
     .pipe(gulp.dest('./src/inc/'));
 });
 
-gulp.task('templates', function() {
+gulp.task('templates', function () {
   return gulp.src('src/index.html')
     .pipe(plumber())
     .pipe(includes({
       prefix: '@@',
-      basepath: '@file'
+      basepath: '@file',
     }))
     .pipe(gulp.dest('./'))
     .pipe(browserSync.stream());
 });
 
-gulp.task('connect', function(){
+gulp.task('connect', function () {
   browserSync.init({
-    server: './'
+    server: './',
   });
 });
 
-gulp.task('watch', function(){
+gulp.task('watch', function () {
   gulp.watch(paths.css, ['styles']);
-  gulp.watch(['src/index.html', './src/assets/inc/*.html'], ['templates']);
+  gulp.watch(['./src/index.html', './src/inc/*'], ['templates']);
   gulp.watch(paths.icons, ['icons', 'templates']);
 });
-
-
 
 gulp.task('build', ['templates', 'styles', 'icons']);
 gulp.task('default', ['build', 'connect', 'watch']);
