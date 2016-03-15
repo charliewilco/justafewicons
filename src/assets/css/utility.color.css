@@ -1,0 +1,5 @@
+.u-red       { color: var(--red); }
+.u-gold      { color: var(--gold); }
+.u-blue      { color: var(--blue); }
+.u-white     { color: white; }
+.u-blue-dark { color: var(--blue-dark); }

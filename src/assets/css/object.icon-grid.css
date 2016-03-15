@@ -1,5 +1,5 @@
-.grid {
-  padding: 1rem 2rem;
+.o-grid {
+  padding: 1rem .5rem;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -8,35 +8,31 @@
   align-content: flex-start;
   align-items: flex-start;
 }
-@media (--handhelds) { .grid { padding: 1rem .5rem; } }
 
-.grid--item {
-  flex: 1 1 5.75rem;
-  max-width: 5.75rem;
+.o-grid__item {
+  flex: 1 1 5.25rem;
+  max-width: 5rem;
   height: auto;
-  margin: 0 1rem 1rem 0;
+  margin: .25rem;
   position: relative;
 }
 
-@media (--handhelds) {
-  .grid--item {
-    margin: .25rem;
-    flex: 1 1 5rem;
-  }
+@media (--md) {
+  .o-grid__item { margin: 0 .5rem .5rem 0; }
 }
 
-.grid--item svg {
-  width: 80%;
+.o-grid__item svg {
+  width: 75%;
   height: auto;
-  max-height:100%;
+  max-height: 5rem;
   margin: 0 auto;
-  transition: all 375ms ease;
+  transition: width 375ms ease;
   fill: var(--blue);
 }
 
-.grid--item svg:hover, .grid--item svg:focus { width: 100%; }
+.o-grid__item svg:hover, .o-grid__item svg:focus { width: 100%; }
 
-.grid--item_label {
+.o-grid__label {
   margin-top: .5rem;
   background: var(--blue);
   width: 100%;
@@ -46,11 +42,11 @@
   font-weight: 400;
   font-size: .625rem;
   line-height: 1;
-  padding: .5rem .25rem;
+  padding: .375rem .125rem;
   border-radius: .25rem;
 }
 
-.grid--item_label::before {
+.o-grid__label::before {
   content: "";
   width: 0;
   height: 0;
@@ -61,4 +57,13 @@
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
   border-bottom: 1rem solid var(--blue);
+}
+
+.new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-size: .5rem;
+  color: var(--yellow);
 }

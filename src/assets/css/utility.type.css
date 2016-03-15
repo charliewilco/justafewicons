@@ -1,0 +1,14 @@
+.u-w300 { font-weight: 300; }
+.u-w400 { font-weight: 400; }
+
+.u-lt-1 { letter-spacing: 1px; }
+.u-lt-2 { letter-spacing: 2px; }
+.u-lt-3 { letter-spacing: 3px; }
+.u-lt-4 { letter-spacing: 4px; }
+.u-lt-5 { letter-spacing: 5px; }
+
+.u-caps { text-transform: uppercase; }
+
+.u-left { text-align: left; }
+.u-right { text-align: right; }
+.u-center { text-align: center; }

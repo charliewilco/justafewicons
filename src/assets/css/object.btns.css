@@ -1,0 +1,21 @@
+.o-btn {
+  padding: .75rem .375rem;
+  margin-bottom: .75rem;
+  font-size: .75rem;
+  border: 1px solid;
+  border-radius: .25rem;
+  background: none;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  transition: color 375ms linear;
+}
+
+.o-btn--lite { color: white; }
+.o-btn--lite:hover { color: var(--gold); }
+.o-btn--dark { color: var(--blue-dark); }
+.o-btn--dark:hover { color: white; }
+
+.btn:not(:last-of-type) { margin-right: .25rem; }
+
+@media (--lg) { }

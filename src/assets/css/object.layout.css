@@ -1,0 +1,35 @@
+.o-layout {
+  width: 100%;
+}
+
+@media (--lg) {
+  .o-layout {
+    display: flex;
+    flex-wrap: no-wrap;
+    height: 100vh;
+  }
+
+  .o-layout--header {
+    overflow-x: scroll;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .o-layout__child--left {
+    flex: 2.75;
+    max-width: 20rem;
+    height: 100%;
+    position: relative;
+  }
+
+  .o-layout__child--right {
+    flex: 8;
+    overflow-x: scroll;
+    position: relative;
+  }
+}

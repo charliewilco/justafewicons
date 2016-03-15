@@ -1,0 +1,9 @@
+pre {
+  background: #C1D9EA;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #5886A7;
+  overflow-x: none;
+}
+
+pre code { font-size: 10px; }

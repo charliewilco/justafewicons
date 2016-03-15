@@ -1,0 +1,7 @@
+a {
+  color: color(var(--blue-dark) blackness(+50%));
+  text-decoration: none;
+  transition: all 375ms linear;
+}
+
+a:hover { color: var(--gold); }

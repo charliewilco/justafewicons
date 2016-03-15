@@ -1,0 +1,16 @@
+:root {
+  --sans-serif: 'Gotham SSm A', 'Gotham SSm B', BlinkMacSystemFont, Avenir, Avenir Next, Helvetica Neue, Helvetica, sans-serif;
+
+  --bkg: #f3f3f3;
+  --orange: #F8501C;
+  --gold: #E5B50F;
+
+  --text: #999999;
+  --yellow: #ffba00;
+  --red: #EB8A77;
+  --gold: #E3BD6E;
+
+  --blue: #5886A7;
+  --blue-dark: #4D7897;
+  --blue-lite: #92AFC5;
+}

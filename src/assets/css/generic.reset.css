@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font: 400 100%/1.6 var(--sans-serif);
+  background: color(var(--bkg) a(87.5%));
+  color: var(--text);
+}
+
+
+p { font-size: .75rem; }
+
+.hide {
+  display: none;
+  width: 0;
+  height: 0;
+}

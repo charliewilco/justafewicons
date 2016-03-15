@@ -1,0 +1,17 @@
+.hl--jumbo { font-size: 2.5rem; }
+.hl--lg    { font-size: 2rem; }
+.hl--md    { font-size: 1.5rem; }
+.hl--sm    { font-size: 1.25rem; }
+.hl--b     { font-size: 1rem; }
+.hl--xs    { font-size: .875rem; }
+.hl--xxs   { font-size: .625rem; }
+
+@media (--handhelds) {
+  .hl--jumbo { font-size: 2.25rem; }
+  .hl--lg    { font-size: 1.75rem; }
+  .hl--md    { font-size: 1.25rem; }
+  .hl--sm    { font-size: 1rem; }
+  .hl--b     { font-size: .75rem; }
+  .hl--xs    { font-size: .625rem; }
+  .hl--xxs   { font-size: .375rem; }
+}
