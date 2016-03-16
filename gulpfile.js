@@ -2,6 +2,7 @@ var gulp         = require('gulp');
 var cssnext      = require('gulp-cssnext');
 var cssmin       = require('gulp-cssmin');
 var includes     = require('gulp-file-include');
+var htmlmin      = require('gulp-html-minifier');
 var size         = require('gulp-size');
 var svgmin       = require('gulp-svgmin');
 var svgstore     = require('gulp-svgstore');
@@ -53,6 +54,7 @@ gulp.task('templates', function () {
       prefix: '@@',
       basepath: '@file',
     }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('./'))
     .pipe(browserSync.stream());
 });

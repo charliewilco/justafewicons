@@ -18,6 +18,7 @@
     "gulp-cssmin": "^0.1.7",
     "gulp-cssnext": "^1.0.1",
     "gulp-file-include": "^0.9.0",
+    "gulp-html-minifier": "^0.1.8",
     "gulp-imagemin": "^0.6.2",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
