@@ -1,22 +1,21 @@
 .c-footer__icon {
   fill: var(--blue);
-  width: 1.5rem;
-  height: 1.3725rem;
-  margin: .5rem;
+  width: 1.275rem;
+  height: 1.029375rem;
   display: inline-block;
   vertical-align: middle;
 }
 
 .c-footer__text {
-  font-size: small;
+  font-size: .75rem;
   display: inline-block;
   vertical-align: middle;
 }
 
 @media (--lg) {
   .c-footer {
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    bottom: 0; right: 0; left: 0;
   }
 }
