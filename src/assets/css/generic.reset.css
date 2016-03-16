@@ -9,7 +9,6 @@
 html {
   font: 400 100%/1.6 var(--sans-serif);
   background: color(var(--bkg) a(87.5%));
-  color: var(--text);
 }
 
 

@@ -1,9 +1,6 @@
 .c-header {
   background: linear-gradient(#4F779A, #5886A7);
-  color: white;
 }
-
-
 
 .c-header__logo svg {
   fill: #92AFC5;
@@ -16,7 +13,5 @@
 
 @media (--lg) {
   .c-header__logo { margin-bottom: 1rem; }
-  .c-header__logo svg {
-    max-height: 5rem;
-  }
+  .c-header__logo svg { max-height: 5rem; }
 }
