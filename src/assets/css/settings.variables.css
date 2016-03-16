@@ -1,5 +1,5 @@
 :root {
-  --sans-serif: 'Gotham SSm A', 'Gotham SSm B', BlinkMacSystemFont, Avenir, Avenir Next, Helvetica Neue, Helvetica, sans-serif;
+  --sans-serif: BlinkMacSystemFont, Avenir, Avenir Next, Helvetica Neue, Helvetica, '.SFNSText-Regular', 'SF UI Text', 'Segoe UI', 'Fira Sans','Roboto', 'Noto Sans', 'Droid Sans', 'Helvetica Neue', 'Lucida Grande', sans-serif;
 
   --bkg: #f3f3f3;
   --orange: #F8501C;
