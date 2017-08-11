@@ -5,6 +5,9 @@
   "main": "gulpfile.js",
   "author": "Charles Peters <charlespeters42@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/charlespeters/justafewicons.git"
