@@ -1,20 +1,12 @@
 {
   "name": "justafewicons",
   "version": "1.0.1",
-  "description": "custom SVG icon set",
-  "main": "gulpfile.js",
-  "author": "Charles Peters <charlespeters42@gmail.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/charlespeters/justafewicons.git"
+  "private": true,
+  "description": "A zero-build static SVG icon gallery.",
+  "scripts": {
+    "serve": "serve ."
   },
-  "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-plumber": "^1.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-svgmin": "^1.1.2",
-    "gulp-svgstore": "^5.0.2"
+    "serve": "^14.2.6"
   }
 }

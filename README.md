@@ -1,44 +1,38 @@
-# ![Just A Few Icons](https://s3.amazonaws.com/f.cl.ly/items/2j1i290g1I1C1h0c2q0y/justafewicons-header.png)
+# Just a Few Icons
 
-SVG Icons with Some Style
+SVG icons with some style.
+
+This repository is a zero-build static GitHub Pages site. The SVG files live in `icons/`, and the gallery is plain HTML, CSS, and JavaScript.
 
 ## Usage
 
- Use all the icons in sprite or as inline images. I would recommend you use these with the `<symbol>` method for SVG, defined [here](https://css-tricks.com/svg-symbol-good-choice-icons/). If you're using Gulp to build your icon sprite here's a reference.
+Use the SVG files directly:
 
-So for example, if you wanted the reference that podcast icon in your markup you'd use this: `<use xlink:href="#jf--icon_podcast" />` and you'd be ready to go.
-
-## Installation
-
-Fork the repo, or download the [zip](https://github.com/charlespeters/justafewicons/zipball/master) or use Bower:
-```
-bower install justafewicons
+```html
+<img src="icons/jf--icon_podcast.svg" alt="">
 ```
 
-These are [available](https://www.dropbox.com/s/gtq69sqqnfaagi7/justafewicons.sketch?dl=0) as symbols for Sketch 3
+Or use the web component from the gallery page:
+
+```html
+<jafi-icon name="podcast"></jafi-icon>
+```
 
 ## Development
 
-Start here are read [_SVG Icon Systems with Gulp_](http://arwhd.co/2015/05/18/svg-gulp-workflow/) from ARWHD for the methodology.
+There is no build step. Edit the files directly and preview with:
 
-Then, fork the repo, `git clone` your fork, `npm install` in the root and run `gulp`.
+```sh
+npx serve .
+```
 
-## Contributing
+Or, after installing dependencies:
 
-First off, you're awesome for wanting to contribute. Second, please take a second to go over a few things to make this process simpler for everyone. Third, you're awesome.
+```sh
+npm run serve
+```
 
-### Pull Requests
-- [Fork](https://github.com/charlespeters/thunder#fork-destination-box) this repo.
-- Push to your fork and submit a pull request.
-- Please provide a short explanation of why you made the changes you made.
-
-### Issues
-**Reduced test cases are required**. All bug reports and problem issues require a reduced test case. See [CSS Tricks - Reduced Test Cases](http://css-tricks.com/reduced-test-cases/) on why they _"are the absolute, ... number one way to troubleshoot bugs."_ Reduced test cases help you identify the issue at hand and understand your own code. On our side, they greatly reduce the amount of time spent resolving the issue.
-
-- A reduced test case is an isolated example that demonstrates the bug or issue.
-- It contains the bare minimum HTML, CSS, and JavaScript required to demonstrate the bug. No extra functionality or styling.
-- A link to your site is **not** a reduced test case.
-- A [JSBin](http://jsbin.com/) or [CodePen](http://codepen.io) is preferred so we can help you fix an error.
+When adding or removing icons, update the icon list in `icons.js`.
 
 ## License
 

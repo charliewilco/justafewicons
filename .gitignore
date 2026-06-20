@@ -1,6 +1,3 @@
 node_modules
-.sass-cache
-/vendor
-defs-block.svg
-icons.svg
+.DS_Store
 *.log
