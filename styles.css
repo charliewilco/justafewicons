@@ -238,21 +238,22 @@ a:hover {
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(7.25rem, 1fr));
+	grid-template-columns: repeat(auto-fill, 6.85rem);
+	justify-content: center;
 	align-items: start;
-	gap: 1.6rem 0.85rem;
-	padding: 1.35rem 1rem 3rem;
+	gap: 1.8rem 1rem;
+	padding: 1.5rem 1rem 3rem;
 }
 
 .icon-card {
 	position: relative;
-	width: min(100%, 7.25rem);
+	width: 6.85rem;
 	min-width: 0;
-	min-height: 7.45rem;
+	min-height: 7rem;
 	display: grid;
-	grid-template-rows: 5.1rem auto;
+	grid-template-rows: 4.75rem auto;
 	align-items: start;
-	gap: 0.5rem;
+	gap: 0.45rem;
 	justify-self: center;
 	border: 0;
 	padding: 0;
@@ -270,13 +271,13 @@ a:hover {
 	display: grid;
 	place-items: center;
 	width: 100%;
-	min-height: 5.1rem;
+	min-height: 4.75rem;
 	color: var(--blue);
 	transition: color 180ms linear;
 }
 
 .icon-preview jafi-icon {
-	--icon-size: 3.55rem;
+	--icon-size: 3.35rem;
 	transition: transform 180ms ease;
 }
 
@@ -293,16 +294,17 @@ a:hover {
 
 .icon-card-name {
 	position: relative;
-	display: block;
+	display: grid;
+	place-items: center;
 	width: 100%;
-	min-height: 2.05rem;
+	min-height: 1.95rem;
 	padding: 0.38rem 0.12rem;
 	border-radius: 4px;
 	background: var(--blue);
 	color: white;
-	font-size: 0.62rem;
+	font-size: 0.6rem;
 	font-weight: 400;
-	line-height: 1.15;
+	line-height: 1.05;
 	overflow-wrap: anywhere;
 }
 
@@ -322,7 +324,7 @@ a:hover {
 .new-badge {
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 0.35rem;
 	color: #ffba00;
 	font-size: 0.5rem;
 	text-transform: uppercase;
@@ -365,12 +367,16 @@ a:hover {
 	}
 
 	.grid {
-		grid-template-columns: repeat(auto-fill, minmax(6.25rem, 1fr));
-		gap: 1.35rem 0.55rem;
+		grid-template-columns: repeat(auto-fill, 5.85rem);
+		gap: 1.35rem 0.6rem;
 		padding-inline: 0.6rem;
 	}
 
 	.icon-card {
-		width: min(100%, 6.25rem);
+		width: 5.85rem;
+	}
+
+	.icon-card-name {
+		font-size: 0.56rem;
 	}
 }
