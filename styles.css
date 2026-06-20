@@ -1,0 +1,372 @@
+:root {
+	color-scheme: light;
+	--blue: #5886a7;
+	--blue-dark: #4d7897;
+	--blue-deep: #4f779a;
+	--blue-lite: #92afc5;
+	--gold: #e3bd6e;
+	--red: #eb8a77;
+	--paper: rgba(243, 243, 243, 0.87);
+	--ink: #3f3f3f;
+	--sidebar: 20rem;
+	font-family: Avenir, "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: var(--paper);
+	color: var(--ink);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input {
+	font: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: color 180ms linear;
+}
+
+a:hover {
+	color: var(--gold);
+}
+
+.gallery {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: var(--sidebar) minmax(0, 1fr);
+}
+
+.sidebar {
+	position: sticky;
+	top: 0;
+	height: 100vh;
+	background: linear-gradient(var(--blue-deep), var(--blue));
+	color: white;
+	overflow: hidden;
+}
+
+.sidebar-scroll {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+	padding: 1.35rem 1.1rem;
+	overflow: auto;
+}
+
+.brand {
+	display: grid;
+	gap: 0.65rem;
+	text-align: center;
+}
+
+.brand-mark {
+	--icon-size: 5rem;
+	width: 5rem;
+	height: 5rem;
+	margin: 0 auto;
+	color: var(--blue-lite);
+}
+
+.brand h1 {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 1.1;
+	letter-spacing: 1px;
+}
+
+.brand p,
+.field label,
+.sidebar-section h2,
+.site-footer,
+.copy-button {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.brand p {
+	margin: 0;
+	color: var(--gold);
+	font-size: 0.72rem;
+}
+
+.field {
+	display: grid;
+	gap: 0.55rem;
+}
+
+.field label,
+.sidebar-section h2 {
+	color: var(--red);
+	font-size: 0.78rem;
+	font-weight: 400;
+}
+
+.search-input {
+	width: 100%;
+	border: 2px solid color-mix(in srgb, white 78%, transparent);
+	border-radius: 4px;
+	padding: 0.72rem 0.75rem;
+	background: color-mix(in srgb, white 12%, transparent);
+	color: white;
+	outline: none;
+}
+
+.search-input::placeholder {
+	color: color-mix(in srgb, white 68%, transparent);
+}
+
+.search-input:focus {
+	border-color: var(--gold);
+}
+
+.sidebar-section {
+	display: grid;
+	gap: 0.8rem;
+}
+
+.sidebar-section h2 {
+	margin: 0;
+	font-size: 1rem;
+}
+
+.sidebar-section p {
+	margin: 0;
+	font-size: 0.82rem;
+	line-height: 1.65;
+}
+
+.snippet {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	padding: 0.85rem;
+	background: #c1d9ea;
+	color: var(--blue);
+	font-size: 0.75rem;
+	line-height: 1.5;
+}
+
+.copy-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.45rem;
+}
+
+.copy-button {
+	display: inline-block;
+	border: 2px solid currentColor;
+	border-radius: 4px;
+	padding: 0.65rem 0.55rem;
+	background: transparent;
+	color: white;
+	font-size: 0.68rem;
+	font-weight: 400;
+	line-height: 1;
+	transition:
+		color 180ms linear,
+		border-color 180ms linear;
+}
+
+.copy-button:hover {
+	color: var(--gold);
+}
+
+.site-footer {
+	margin-top: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.75rem;
+	padding-top: 1rem;
+	color: color-mix(in srgb, white 84%, transparent);
+	font-size: 0.7rem;
+}
+
+.site-footer::before {
+	content: "";
+	width: 1rem;
+	height: 1rem;
+	background: var(--gold);
+	border-radius: 50%;
+}
+
+.content {
+	min-width: 0;
+}
+
+.content-header {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0.8rem 1rem;
+	background: color-mix(in srgb, var(--paper) 92%, white);
+	border-bottom: 1px solid color-mix(in srgb, var(--blue) 22%, transparent);
+}
+
+.content-header h2 {
+	margin: 0;
+	color: var(--blue-dark);
+	font-size: 0.85rem;
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.count {
+	color: var(--blue-dark);
+	font-size: 0.75rem;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+	gap: 0.5rem;
+	padding: 1rem 0.5rem;
+}
+
+.icon-card {
+	position: relative;
+	flex: 1 1 5.25rem;
+	max-width: 5rem;
+	min-height: 7.3rem;
+	display: grid;
+	grid-template-rows: 5rem auto;
+	align-items: start;
+	gap: 0.5rem;
+	border: 0;
+	padding: 0;
+	background: transparent;
+	color: var(--blue);
+	text-align: center;
+}
+
+.icon-card:focus-visible {
+	outline: 2px solid var(--gold);
+	outline-offset: 4px;
+}
+
+.icon-preview {
+	display: grid;
+	place-items: center;
+	min-height: 5rem;
+	color: var(--blue);
+	transition: color 180ms linear;
+}
+
+.icon-preview jafi-icon {
+	--icon-size: 3.75rem;
+	transition: transform 180ms ease;
+}
+
+.icon-card:hover .icon-preview,
+.icon-card:focus-visible .icon-preview,
+.icon-card[aria-pressed="true"] .icon-preview {
+	color: var(--red);
+}
+
+.icon-card:hover .icon-preview jafi-icon,
+.icon-card:focus-visible .icon-preview jafi-icon {
+	transform: scale(1.12);
+}
+
+.icon-card-name {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0.38rem 0.12rem;
+	border-radius: 4px;
+	background: var(--blue);
+	color: white;
+	font-size: 0.62rem;
+	font-weight: 400;
+	line-height: 1;
+	overflow-wrap: anywhere;
+}
+
+.icon-card-name::before {
+	content: "";
+	position: absolute;
+	top: -0.72rem;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border-right: 0.65rem solid transparent;
+	border-bottom: 0.75rem solid var(--blue);
+	border-left: 0.65rem solid transparent;
+	transform: translateX(-50%);
+}
+
+.new-badge {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #ffba00;
+	font-size: 0.5rem;
+	text-transform: uppercase;
+}
+
+.empty {
+	margin: 3rem auto;
+	color: var(--blue-dark);
+}
+
+@media (min-width: 57.75rem) {
+	.content {
+		height: 100vh;
+		overflow: auto;
+	}
+}
+
+@media (max-width: 57.74rem) {
+	.gallery {
+		grid-template-columns: 1fr;
+	}
+
+	.sidebar {
+		position: static;
+		height: auto;
+	}
+
+	.sidebar-scroll {
+		min-height: auto;
+	}
+
+	.content-header {
+		position: static;
+	}
+}
+
+@media (max-width: 31.25rem) {
+	.brand h1 {
+		font-size: 1.35rem;
+	}
+
+	.grid {
+		gap: 0.35rem;
+	}
+
+	.icon-card {
+		flex-basis: 4.8rem;
+	}
+}

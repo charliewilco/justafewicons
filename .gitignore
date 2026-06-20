@@ -1,5 +1,1 @@
-node_modules
-.sass-cache
-*.swp
-build/vendor
-*.log
+.DS_Store
