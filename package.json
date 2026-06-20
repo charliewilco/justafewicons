@@ -1,0 +1,12 @@
+{
+  "name": "justafewicons",
+  "version": "1.0.1",
+  "private": true,
+  "description": "A zero-build static SVG icon gallery.",
+  "scripts": {
+    "serve": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}
